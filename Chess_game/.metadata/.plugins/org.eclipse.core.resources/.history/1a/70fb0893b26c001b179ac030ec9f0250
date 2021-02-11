@@ -1,0 +1,18 @@
+package com.chess.engine.Pieces;
+
+import com.chess.engine.Alliance;
+import com.chess.engine.board.Move;
+
+public class Piece {
+ 
+	protected final int piecePosition;
+	protected final Alliance pieceAlliance;
+	
+	Piece(final int piecePosition, final Alliance pieceAlliance ){
+		this.piecePosition = piecePosition;
+		this.pieceAlliance = pieceAlliance;
+	}
+	
+	public abstract List<Move> calculateLegalMoves(final Board board);
+	
+}

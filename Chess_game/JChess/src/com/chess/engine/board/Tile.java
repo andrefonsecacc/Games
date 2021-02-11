@@ -2,14 +2,15 @@ package com.chess.engine.board;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Collections;
 
-import com.chess.engine.pieces.Piece;
+import com.chess.engine.Pieces.Piece;
 
 public abstract class Tile {
 
 	protected final int tileCoordinate;
 	
-	private static final Map<Integer,EmptyTile> EMPTY_TILES = creatAllPossibleEmptyTiles();
+	private static final Map<Integer,EmptyTile> EMPTY_TILES_CACHE = creatAllPossibleEmptyTiles();
 	
 	private Tile(int tileCoordinate){
 		this.tileCoordinate=tileCoordinate;
@@ -24,11 +25,12 @@ public abstract class Tile {
 		}
 		
 		//return ImmutableMap.copyOf(emptyTileMap);
-		return emptyTileMap;
+		return Collections.unmodifiableMap(emptyTileMap);
+		//return emptyTileMap;
 	}
 
 	public static Tile createTile(final int tileCoordinate, final Piece piece){
-		return piece !=null ? new OccupiedTile(tileCoordinate, piece):EMPTY_TILES.get(tileCoordinate); 
+		return piece !=null ? new OccupiedTile(tileCoordinate, piece):EMPTY_TILES_CACHE.get(tileCoordinate); 
 	}
 	
 	public abstract boolean isTileOccupied();
@@ -55,7 +57,7 @@ public abstract class Tile {
 		
 		private final Piece pieceOnTile;
 		
-		OccupiedTile(int tileCoordinate,Piece pieceOnTile){
+		private OccupiedTile(int tileCoordinate,Piece pieceOnTile){
 			super(tileCoordinate);
 			this.pieceOnTile=pieceOnTile;
 		}

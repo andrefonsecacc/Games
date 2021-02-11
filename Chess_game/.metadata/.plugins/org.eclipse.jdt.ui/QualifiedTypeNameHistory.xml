@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.chess.engine.pieces.Piece"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.chess.engine.board.Tile.EmptyTile"/>
+<fullyQualifiedTypeName name="com.chess.engine.board.Tile.OccupiedTile"/>
+</qualifiedTypeNameHistroy>
