@@ -5,4 +5,16 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="com.chess.engine.board.Tile.EmptyTile"/>
 <fullyQualifiedTypeName name="com.chess.engine.board.Tile.OccupiedTile"/>
+<fullyQualifiedTypeName name="com.chess.engine.board.Move"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.chess.engine.board.Tile"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.chess.engine.Alliance"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+<fullyQualifiedTypeName name="com.chess.engine.board.Board"/>
+<fullyQualifiedTypeName name="com.chess.engine.board.BoardUtils"/>
+<fullyQualifiedTypeName name="com.chess.engine.Pieces.Piece"/>
+<fullyQualifiedTypeName name="com.chess.engine.board.Move.MajorMove"/>
+<fullyQualifiedTypeName name="com.chess.engine.board.Move.AttackMove"/>
 </qualifiedTypeNameHistroy>

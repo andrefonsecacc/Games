@@ -1,0 +1,14 @@
+package com.chess.engine.board;
+
+import javax.management.RuntimeErrorException;
+
+public class BoardUtils {
+
+	private BoardUtils(){
+		throw new RuntimeErrorException("You cannot instantiate me!")
+	}
+	
+	public static boolean isValidTileCoordinate(int coordinate){
+		return coordinate >=0 && coordinate <64; 
+	}
+}
