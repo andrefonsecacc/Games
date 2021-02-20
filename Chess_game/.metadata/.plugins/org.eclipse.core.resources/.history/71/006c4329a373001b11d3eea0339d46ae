@@ -1,0 +1,12 @@
+package com.chess.engine.Pieces;
+
+import com.chess.engine.Alliance;
+
+public class Bishop extends Piece {
+
+	Bishop(int piecePosition, Alliance pieceAlliance) {
+		super(piecePosition, pieceAlliance);
+		// TODO Auto-generated constructor stub
+	}
+
+}
