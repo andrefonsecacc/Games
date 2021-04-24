@@ -1,19 +1,21 @@
 package com.chess.engine;
 public enum Alliance {
-	WHITE{
+	WHITE,
+ {
 		@Override
-		public int getDirection() {
+		int getDirection() {
 			// TODO Auto-generated method stub
-			return -1;
+			return 0;
 		}
-	},	
-	BLACK {
+	}	BLACK
+
+ {
 		@Override
-		public int getDirection() {
+		int getDirection() {
 			// TODO Auto-generated method stub
-			return 1;
+			return 0;
 		}
-	};
+	}	
 	
-	public abstract int getDirection();
+	abstract int getDirection();
 }
